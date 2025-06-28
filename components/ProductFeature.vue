@@ -20,7 +20,7 @@
             <a-card class="card" hoverable>
                 <a-space>
                     <icon-swap />
-                    数据双向传输加密，支持上下行速度限制，无限流量
+                    数据双向传输加密，支持上下行速度限制
                 </a-space>
             </a-card>
         </a-col>

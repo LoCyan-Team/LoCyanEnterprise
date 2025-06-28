@@ -1,25 +1,33 @@
 <template>
-    <a-layout class="full-layout">
-        <a-layout-header class="layout-header">
-            <Header></Header>
-        </a-layout-header>
-        <a-layout class="content-layout">
-            <a-layout-content class="layout-content">
-                <nuxt-page />
-            </a-layout-content>
+    <a-spin :loading="loading" tip="精彩即将呈现...">
+        <a-layout class="full-layout">
+            <a-layout-header class="layout-header">
+                <Header></Header>
+            </a-layout-header>
+            <a-layout class="content-layout">
+                <a-layout-content class="layout-content">
+                    <nuxt-page />
+                </a-layout-content>
+            </a-layout>
+            <a-layout-footer class="layout-footer">
+                <Footer></Footer>
+            </a-layout-footer>
         </a-layout>
-        <a-layout-footer class="layout-footer">
-            <Footer></Footer>
-        </a-layout-footer>
-    </a-layout>
+    </a-spin>
 </template>
 <script setup>
+
+const loading = ref(true)
+
 onMounted(() => {
     useHead({
         bodyAttrs: {
             'arco-theme': 'dark'
         }
     })
+
+    loading.value = false
+
 })
 </script>
 

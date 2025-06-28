@@ -2,14 +2,13 @@
     <div>
         <div
             style="background: rgb(var(--arcoblue-5)); height: 60vh; display: flex; justify-content: center; align-items: center;"
-            :key="1"
-            class="scroll-reveal-item">
+            :key="1">
             <Typography>
                 <a-space direction="vertical" fill style="text-align: center;">
-                    <a-typography-title>
+                    <a-typography-title class="scroll-reveal-item">
                         LoCyanFrp Enterprise
                     </a-typography-title>
-                    <a-typography-title :heading="4" >
+                    <a-typography-title :heading="4" class="scroll-reveal-item">
                         乐青映射企业级解决方案
                     </a-typography-title>
                 </a-space>
